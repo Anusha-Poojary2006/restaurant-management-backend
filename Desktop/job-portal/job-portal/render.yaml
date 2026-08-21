@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: job-portal-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /jobs
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: DATABASE_USERNAME
+        sync: false
+      - key: DATABASE_PASSWORD
+        sync: false
+      - key: PORT
+        value: "8081"
