@@ -51,6 +51,9 @@ public class SecurityConfig {
                         .requestMatchers("/auth/**")
                         .permitAll()
 
+                        .requestMatchers("/health")
+                        .permitAll()
+
                         // =========================
                         // MENU
                         // =========================
